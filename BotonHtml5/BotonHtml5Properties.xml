@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Object id="BotonHtml5">
+    <Group>
+      <Name>General</Name>
+      <Type>Main</Type>
+      <Childs>
+        <Prop>
+          <Id>Width</Id>
+          <Name>Width</Name>
+          <Type>Text</Type>
+          <Default>100</Default>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Height</Id>
+          <Name>Height</Name>
+          <Type>Text</Type>
+          <Default>100</Default>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>Contenido</Id>
+          <Name>Contenido</Name>
+          <Type>Text</Type>
+          <Default>Boton</Default>
+          <Metadata />
+        </Prop>
+        <Prop>
+          <Id>CssClass</Id>
+          <Name>CssClass</Name>
+          <Type>Text</Type>
+          <Default>btn</Default>
+          <Metadata />
+        </Prop>
+        <Group>
+          <Name>TagHtmlEnContenido</Name>
+          <Childs>
+            <Prop>
+              <Id>HtmlTag</Id>
+              <Name>HtmlTag</Name>
+              <Type>Combo</Type>
+              <Default>ninguno</Default>
+              <Metadata />
+              <Values>
+                <Value id="ninguno" desc="Ninguno" />
+                <Value id="span" desc="&lt;span&gt;" />
+                <Value id="i" desc="&lt;i&gt;" />
+              </Values>
+            </Prop>
+            <Prop>
+              <Id>HtmlTagCssClass</Id>
+              <Name>HtmlTagCssClass</Name>
+              <Type>Text</Type>
+              <Metadata />
+            </Prop>
+            <Prop>
+              <Id>HtmlTagContenido</Id>
+              <Name>HtmlTagContenido</Name>
+              <Type>Text</Type>
+              <Metadata />
+            </Prop>
+            <Prop>
+              <Id>HtmlTagPosicion</Id>
+              <Name>HtmlTagPosicion</Name>
+              <Type>Combo</Type>
+              <Default>izquierda</Default>
+              <Metadata />
+              <Values>
+                <Value id="izquierda" desc="Izquierda" />
+                <Value id="derecha" desc="Derecha" />
+              </Values>
+            </Prop>
+          </Childs>
+        </Group>
+      </Childs>
+    </Group>
+  </Object>
+</Content>

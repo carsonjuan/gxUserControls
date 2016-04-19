@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>0.4</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <SupportFiles />
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>BotonHtml5Render.js</RuntimeRender>
+  <HeightPropertyName>Height</HeightPropertyName>
+  <WidthPropertyName>Width</WidthPropertyName>
+  <ResizeSupported>true</ResizeSupported>
+  <ObjClass>BotonHtml5</ObjClass>
+  <Description>BotonHtml5</Description>
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>BotonHtml5</Name>
+  <Platforms />
+  <ShowMethod>show</ShowMethod>
+  <ReferencedFiles />
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>BotonHtml5</Name>
+  </Constructor>
+  <PropertiesDefinition>BotonHtml5Properties.xml</PropertiesDefinition>
+  <DesignRender>BotonHtml5Render.xsl</DesignRender>
+  <ToolboxIcon>botonhtml5_icono.ico</ToolboxIcon>
+  <ControlType />
+  <Categories>
+    <Category>Carson.mobi</Category>
+  </Categories>
+  <Events>
+    <Event>Click</Event>
+  </Events>
+  <Methods />
+  <Actions />
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
+</ControlDefinition>
