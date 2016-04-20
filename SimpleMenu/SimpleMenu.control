@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>0.7</Version>
+  <DataSourceAllowed>None</DataSourceAllowed>
+  <CustomDataSources />
+  <AutoGrowSupported>false</AutoGrowSupported>
+  <IncludeInControlInfo>false</IncludeInControlInfo>
+  <SupportFiles />
+  <iOS_SupportFiles />
+  <Android_SupportFiles />
+  <BB_SupportFiles />
+  <RuntimeRender>SimpleMenuRender.js</RuntimeRender>
+  <GxResources>SimpleMenu.xpz</GxResources>
+  <HeightPropertyName />
+  <WidthPropertyName />
+  <ResizeSupported>false</ResizeSupported>
+  <ObjClass>SimpleMenu</ObjClass>
+  <Description>Simple Menu</Description>
+  <Id>00000000-0000-0000-0000-000000000000</Id>
+  <Name>SimpleMenu</Name>
+  <Platforms />
+  <ShowMethod>show</ShowMethod>
+  <ReferencedFiles>
+    <File>metisMenu.css</File>
+	<File>simplemenu.css</File>
+    <File>metisMenu.js</File>
+  </ReferencedFiles>
+  <iOS_ReferencedFiles />
+  <Android_ReferencedFiles />
+  <BB_ReferencedFiles />
+  <Constructor>
+    <Parameters />
+    <Name>SimpleMenu</Name>
+  </Constructor>
+  <PropertiesDefinition>SimpleMenuProperties.xml</PropertiesDefinition>
+  <DesignRender>SimpleMenuRender.xsl</DesignRender>
+  <ToolboxIcon>simplemenu_icono.ico</ToolboxIcon>
+  <ControlType />
+  <Categories>
+    <Category>Carson.mobi</Category>
+  </Categories>
+  <Events />
+  <Actions />
+  <IsPublic>true</IsPublic>
+  <Android_IsScrollable>false</Android_IsScrollable>
+  <Methods />
+</ControlDefinition>
