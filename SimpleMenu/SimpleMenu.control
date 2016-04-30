@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>0.7</Version>
+  <Version>0.8</Version>
   <DataSourceAllowed>None</DataSourceAllowed>
   <CustomDataSources />
   <AutoGrowSupported>false</AutoGrowSupported>
@@ -39,7 +39,9 @@
   <Categories>
     <Category>Carson.mobi</Category>
   </Categories>
-  <Events />
+  <Events>
+	<Event>OnClick</Event>
+  </Events>
   <Actions />
   <IsPublic>true</IsPublic>
   <Android_IsScrollable>false</Android_IsScrollable>

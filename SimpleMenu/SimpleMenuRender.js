@@ -73,7 +73,7 @@ function SimpleMenu($)
 				this.menuBuffer.append('		</li>');
 			} else {
 				this.menuBuffer.append('		<li>');
-				this.menuBuffer.append('			<a href="' + ((data[i].Link) ? data[i].Link : '#') + '" aria-expanded="false">');
+				this.menuBuffer.append('			<a href="' + ((data[i].Link) ? data[i].Link : '#') + '" aria-expanded="false" onclick="' + this.me() + '.SimpleMenuOnClick(\'' + data[i].Id + '\');">');
 				if(data[i].Icono) {
 					this.menuBuffer.append('				<span class="SimpleMenuItemIcono ' + data[i].Icono + '"></span>');
 					this.menuBuffer.append('				<span class="SimpleMenuItem">' + ((data[i].Titulo) ? data[i].Titulo : '') + '</span></a>');
@@ -84,6 +84,14 @@ function SimpleMenu($)
 			}
 		}
 		return this.menuBuffer;
+	}
+	
+	this.SimpleMenuOnClick = function(id) {
+		if (typeof(this.OnClick) == 'function') {
+			//this.SelectedItem.Id = id;
+			
+			this.OnClick();
+		}
 	}
 
 	///UserCodeRegionEnd: (do not remove this comment.):
