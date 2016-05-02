@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>0.1</Version>
+  <Version>0.58</Version>
   <DataSourceAllowed>None</DataSourceAllowed>
   <CustomDataSources />
   <AutoGrowSupported>false</AutoGrowSupported>
@@ -12,14 +12,17 @@
   <RuntimeRender>SimpleBotonRender.js</RuntimeRender>
   <HeightPropertyName>Height</HeightPropertyName>
   <WidthPropertyName>Width</WidthPropertyName>
-  <ResizeSupported>true</ResizeSupported>
+  <ResizeSupported>false</ResizeSupported>
   <ObjClass>SimpleBoton</ObjClass>
-  <Description>Boton con Burbuja</Description>
+  <Description>Simple Boton</Description>
   <Id>00000000-0000-0000-0000-000000000000</Id>
-  <Name>Simple Boton</Name>
+  <Name>SimpleBoton</Name>
   <Platforms />
   <ShowMethod>show</ShowMethod>
-  <ReferencedFiles />
+  <ReferencedFiles>
+	<SharedFile>jquery/jquery1.9.1.js</SharedFile>
+	<File>simpleboton.css</File>
+  </ReferencedFiles>
   <iOS_ReferencedFiles />
   <Android_ReferencedFiles />
   <BB_ReferencedFiles />

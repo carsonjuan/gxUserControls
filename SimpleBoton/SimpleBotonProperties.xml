@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Object id="BotonConBurbuja">
+  <Object id="SimpleBoton">
     <Group>
       <Name>General</Name>
       <Type>Main</Type>
@@ -23,23 +23,45 @@
           <Id>CssClassBoton</Id>
           <Name>CssClassBoton</Name>
           <Type>Text</Type>
+		  <Default>SimpleBoton</Default>
           <Metadata />
         </Prop>
 		<Prop>
-          <Id>CssClassBotonSeleccionado</Id>
-          <Name>CssClassBotonSeleccionado</Name>
+		  <Id>Dropdown</Id>
+		  <Name>Dropdown</Name>
+		  <Type>Combo</Type>
+		  <Default>no</Default>
+		  <Metadata />
+		  <Values>
+			<Value id="no" desc="No" />
+			<Value id="derecha" desc="Derecha" />
+			<Value id="izquierda" desc="Izquierda" />
+		  </Values>
+		</Prop>
+		<Prop>
+          <Id>CssClassDropdown</Id>
+          <Name>CssClassDropdown</Name>
           <Type>Text</Type>
+		  <Default>SimpleBotonDropdown</Default>
           <Metadata />
         </Prop>
 		<Prop>
           <Id>CssClassBurbuja</Id>
           <Name>CssClassBurbuja</Name>
           <Type>Text</Type>
+		  <Default>SimpleBotonBurbuja</Default>
           <Metadata />
         </Prop>
 		<Prop>
           <Id>CssClassIcono</Id>
           <Name>CssClassIcono</Name>
+          <Type>Text</Type>
+		  <Default>glyphicon glyphicon-user</Default>
+          <Metadata />
+        </Prop>
+		<Prop>
+          <Id>Texto</Id>
+          <Name>Texto</Name>
           <Type>Text</Type>
           <Metadata />
         </Prop>

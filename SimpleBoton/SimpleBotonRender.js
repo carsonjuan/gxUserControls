@@ -1,9 +1,11 @@
 function SimpleBoton($)
 {
 	this.CssClassBoton;
-	this.CssClassBotonSeleccionado;
+	this.Dropdown;
+	this.CssClassDropdown;
 	this.CssClassBurbuja;
 	this.CssClassIcono;
+	this.Texto;
 	this.CantidadBurbuja;
 	this.ToolTip;
 
@@ -32,23 +34,39 @@ function SimpleBoton($)
 		boton_buffer.clear();
 		
 		boton_buffer.append('<div class="btn-group">');
-		boton_buffer.append('<button id="' + this.Id + '" type="button" class="' + this.CssClassBoton + '" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">');
+		if(this.Dropdown != 'no')
+		{
+			boton_buffer.append('<button id="' + this.Id + '" type="button" class="' + this.CssClassBoton + '" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">');
+		} else {
+			boton_buffer.append('<button id="' + this.Id + '" type="button" class="' + this.CssClassBoton + '" >');
+		}
 		
-		boton_buffer.append('<span class="' + this.CssClassIcono + '"></span>');
+		if(this.CssClassIcono)
+			boton_buffer.append('<span class="' + this.CssClassIcono + '"></span>');
+		if(this.Texto)
+			boton_buffer.append('<span>' + this.Texto + '</span>');
 		boton_buffer.append('</button>');
-		boton_buffer.append('<ul class="dropdown-menu pull-right NssClassBotonMenuOpciones" role="menu" > <li>');
-		boton_buffer.append('<div id="' + dropdown_container + '"></div>');
-		boton_buffer.append('</li> </ul>');
 		
+		if(this.Dropdown != 'no') {
+			
+			if(this.Dropdown === 'derecha') {
+				boton_buffer.append('<ul class="dropdown-menu pull-right ' + this.CssClassDropdown + '" role="menu" > <li>');
+			} else {
+				boton_buffer.append('<ul class="dropdown-menu pull-left ' + this.CssClassDropdown + '" role="menu" > <li>');
+			}
+			boton_buffer.append('<div id="' + dropdown_container + '"></div>');
+			boton_buffer.append('</li> </ul>');
+		}
 		boton_buffer.append('</div>');
 		
 		
 		this.setHtml(boton_buffer.toString());
 		
-		var childContainer = this.getChildContainer("ContainerGx");
-		gx.fn.setVisible(childContainer,1);
-		gx.dom.el(dropdown_container).appendChild(childContainer);
-		
+		if(this.Dropdown != 'no') {
+			var childContainer = this.getChildContainer("ContainerGx");
+			gx.fn.setVisible(childContainer,1);
+			gx.dom.el(dropdown_container).appendChild(childContainer);
+		}
 		document.getElementById(this.Id).onclick = this.Click;
 	}
 	

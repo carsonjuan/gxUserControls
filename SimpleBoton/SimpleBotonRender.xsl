@@ -16,14 +16,11 @@
     </xsl:choose>
   </xsl:template>
 
-  <!-- BotonHtml5 design render -->
+  <!-- SimpleBoton design render -->
   <!-- ///////////////////  Implement your render here  ///////////////////-->
   <xsl:template name="RenderSimpleBoton">
-     <table cellSpacing="0" cellPadding="0" background="">
-      <xsl:call-template name="AddTableStyleAttribute"/>
-      <tbody>
-              <tr>
-          <td>
+      <div atomicselection="true">
+      
             <span>
               <xsl:call-template name="AddStyleAttribute"/>
 			  <img>
@@ -34,15 +31,18 @@
 				<xsl:call-template name="AddStyleAttribute"/>
 			  </img>
             </span>
-          </td>
-        </tr>
-        <tr>
+      
+		<table cellSpacing="0" cellPadding="0">
+      <xsl:call-template name="MiEstilo"/>
+      <tbody>
+	    <tr>
         <td containerId="ContainerGx">
 		
         </td>
         </tr>
       </tbody>
     </table>
+</div>
 
   </xsl:template>
 
@@ -51,22 +51,18 @@
 
   <xsl:template name="AddStyleAttribute" >
     <xsl:variable name="Style">
-      <xsl:text>width: </xsl:text>
-      <xsl:text>45</xsl:text>
-      <xsl:text>; </xsl:text>
-      <xsl:text>height: </xsl:text>
-      <xsl:text>45</xsl:text>
-      <xsl:text>; </xsl:text>
+      <xsl:text>width: 45; height: 45;</xsl:text>
       <xsl:text>border-style: solid;	border-width: 0px;</xsl:text>
     </xsl:variable>
     <xsl:attribute name="style">
       <xsl:value-of select="$Style"/>
     </xsl:attribute>
   </xsl:template>
-  <xsl:template name="AddTableStyleAttribute" >
+  
+  <xsl:template name="MiEstilo" >
     <xsl:variable name="Style">
       <xsl:text>width: </xsl:text>
-      <xsl:text>45</xsl:text>
+      <xsl:text>100</xsl:text>
       <xsl:text>; </xsl:text>
       <xsl:text>height: </xsl:text>
       <xsl:text>100</xsl:text>
