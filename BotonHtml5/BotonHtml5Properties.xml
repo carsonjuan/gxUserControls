@@ -73,46 +73,6 @@
             </Prop>
           </Childs>
         </Group>
-		<Group>
-          <Name>Tag2HtmlEnContenido</Name>
-          <Childs>
-            <Prop>
-              <Id>HtmlTag2</Id>
-              <Name>HtmlTag2</Name>
-              <Type>Combo</Type>
-              <Default>ninguno</Default>
-              <Metadata />
-              <Values>
-                <Value id="ninguno" desc="Ninguno" />
-                <Value id="span" desc="&lt;span&gt;" />
-                <Value id="i" desc="&lt;i&gt;" />
-              </Values>
-            </Prop>
-            <Prop>
-              <Id>HtmlTag2CssClass</Id>
-              <Name>HtmlTag2CssClass</Name>
-              <Type>Text</Type>
-              <Metadata />
-            </Prop>
-            <Prop>
-              <Id>HtmlTag2Contenido</Id>
-              <Name>HtmlTag2Contenido</Name>
-              <Type>Text</Type>
-              <Metadata />
-            </Prop>
-            <Prop>
-              <Id>HtmlTag2Posicion</Id>
-              <Name>HtmlTag2Posicion</Name>
-              <Type>Combo</Type>
-              <Default>izquierda</Default>
-              <Metadata />
-              <Values>
-                <Value id="izquierda" desc="Izquierda" />
-                <Value id="derecha" desc="Derecha" />
-              </Values>
-            </Prop>
-          </Childs>
-        </Group>
       </Childs>
     </Group>
   </Object>
