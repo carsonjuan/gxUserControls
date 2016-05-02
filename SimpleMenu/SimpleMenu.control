@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>0.8</Version>
+  <Version>0.92</Version>
   <DataSourceAllowed>None</DataSourceAllowed>
   <CustomDataSources />
   <AutoGrowSupported>false</AutoGrowSupported>
@@ -21,6 +21,7 @@
   <Platforms />
   <ShowMethod>show</ShowMethod>
   <ReferencedFiles>
+	<SharedFile>jquery/jquery1.9.1.js</SharedFile>
     <File>metisMenu.css</File>
 	<File>simplemenu.css</File>
     <File>metisMenu.js</File>

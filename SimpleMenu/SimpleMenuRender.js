@@ -42,7 +42,8 @@ function SimpleMenu($)
 			buffer.append('</nav>');
 			this.setHtml(buffer.toString());
 			
-			$("#"+ this.Id).metisMenu();
+			jQuery("#"+ this.Id).metisMenu();
+			
 			
 		}
 
