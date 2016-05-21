@@ -1,65 +1,57 @@
 .SimpleMenuSidebarNav {
-  display: block;
-  float: left;
-  width: 250px;
+    display: block;
+    float: left;
 }
 .SimpleMenuSidebarNav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 .SimpleMenuSidebarNav a, .SimpleMenuSidebarNav a:hover, .SimpleMenuSidebarNav a:focus, .SimpleMenuSidebarNav a:active {
-  outline: none;
-  text-decoration: none;
+    outline: none;
+    text-decoration: none;
 }
 .SimpleMenuSidebarNav ul li, .SimpleMenuSidebarNav ul a {
-  display: block;
+    display: block;
 }
 .SimpleMenuSidebarNav ul a {
-  padding: 12px 10px;
-  color: #4C4C4C;
+    padding: 12px 10px;
+    color: #4C4C4C;
 }
-
 .SimpleMenuSidebarNav ul a:hover, .SimpleMenuSidebarNav ul a:focus, .SimpleMenuSidebarNav ul a:active {
-  background-color: #F4F4F4;
-  text-decoration: none;
+    background-color: #F4F4F4;
+    text-decoration: none;
 }
 .SimpleMenuSidebarNav ul ul a {
-  padding: 10px 10px 10px 50px;
-  color: #7f7f7f;
+    padding: 10px 10px 10px 50px;
+    color: #7f7f7f;
 }
 .SimpleMenuSidebarNav ul ul a:hover, .SimpleMenuSidebarNav ul ul a:focus, .SimpleMenuSidebarNav ul ul a:active {
-  background-color: transparent;
-  color: #4C4C4C;
+    background-color: transparent;
+    color: #4C4C4C;
 }
-
 .SimpleMenuSidebarNav ul ul ul a {
-  background-color: #F4F4F4;
+    background-color: #F4F4F4;
 }
-
 .SimpleMenuSidebarNav ul ul ul a:hover, .SimpleMenuSidebarNav ul ul ul a:focus, .SimpleMenuSidebarNav ul ul ul a:active {
-  background-color: #F4F4F4;
-  color: #4C4C4C;
+    background-color: #F4F4F4;
+    color: #4C4C4C;
 }
-
 .SimpleMenuItem {
-  padding-left: 5px;
+    padding-left: 5px;
 }
 .SimpleMenuItemIcono {
-  padding-right: 5px;
+    padding-right: 5px;
 }
-
 *[dir="rtl"] .metismenu .SimpleMenuExpandir {
-  float: left;
+    float: left;
 }
-
 .metismenu .SimpleMenuExpandir {
-  float: right;
+    float: right;
 }
-
 .metismenu .glyphicon.SimpleMenuExpandir:before {
-  content: "\e259";
+    content: "\e259";
 }
 .metismenu .active > a > .glyphicon.SimpleMenuExpandir:before {
-  content: "\e260";
+    content: "\e260";
 }

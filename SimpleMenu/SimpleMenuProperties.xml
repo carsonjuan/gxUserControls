@@ -1,21 +1,28 @@
 <?xml version="1.0"?>
 <Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Object id="SimpleMenu">
-    <Group>
-      <Name>General</Name>
-      <Type>Main</Type>
-      <Childs>
-        <Prop>
-          <Id>Menu</Id>
-          <Name>Menu</Name>
-          <Type>Custom</Type>
-          <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
-          <Metadata>
-            <Value name="FlagSetValueMethod">SetMenu</Value>
-            <Value name="FlagGetValueMethod">GetMenu</Value>
-          </Metadata>
-        </Prop>
-      </Childs>
-    </Group>
-  </Object>
+    <Object id="SimpleMenu">
+        <Group>
+            <Name>General</Name>
+            <Type>Main</Type>
+            <Childs>
+                <Prop>
+                    <Id>Menu</Id>
+                    <Name>Menu</Name>
+                    <Type>Custom</Type>
+                    <CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+                    <Metadata>
+                        <Value name="FlagSetValueMethod">SetMenu</Value>
+                        <Value name="FlagGetValueMethod">GetMenu</Value>
+                    </Metadata>
+                </Prop>
+                <Prop>
+                    <Id>AnchoEnPixeles</Id>
+                    <Name>AnchoEnPixeles</Name>
+                    <Type>Text</Type>
+                    <Default>250</Default>
+                    <Metadata/>
+                </Prop>
+            </Childs>
+        </Group>
+    </Object>
 </Content>

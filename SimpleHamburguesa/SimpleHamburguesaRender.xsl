@@ -12,43 +12,47 @@
 
         <xsl:choose>
 
-            <xsl:when test="@type = 'SimpleMenu'">
-                <xsl:call-template name="RenderSimpleMenu"/>
+            <xsl:when test="@type = 'SimpleHamburguesa'">
+                <xsl:call-template name="RenderSimpleHamburguesa"/>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
 
-    <!-- MenuMagico design render -->
+    <!-- SimpleHamburguesa design render -->
     <!-- ///////////////////  Implement your render here  ///////////////////-->
 
-    <xsl:template name="RenderSimpleMenu">
+    <xsl:template name="RenderSimpleHamburguesa">
         <span atomicselection="true">
 
             <xsl:call-template name="AddStyleAttribute"/>
+
             <img>
 
                 <xsl:attribute name="src">
 
                     <xsl:value-of select="gxca:GetMyPath()"/>
-                    <xsl:text>\simplemenu_render.png</xsl:text>
+                    <xsl:text>\simplehamburguesa_render.png</xsl:text>
                 </xsl:attribute>
 
                 <xsl:call-template name="AddStyleAttribute"/>
             </img>
+
         </span>
+
     </xsl:template>
 
     <!-- Helpers Templates -->
+
     <xsl:template name="AddStyleAttribute">
 
         <xsl:variable name="Style">
             <xsl:text>width: </xsl:text>
-            <xsl:text>268</xsl:text>
+            <xsl:text>43</xsl:text>
             <xsl:text>; </xsl:text>
             <xsl:text>height: </xsl:text>
-            <xsl:text>447</xsl:text>
+            <xsl:text>34</xsl:text>
             <xsl:text>; </xsl:text>
-            <xsl:text>border-style: solid;	border-width: 2px;</xsl:text>
+            <xsl:text>border-style: solid;	border-width: 0px;</xsl:text>
         </xsl:variable>
 
         <xsl:attribute name="style">

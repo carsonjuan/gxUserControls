@@ -1,45 +1,45 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Version>1.00</Version>
-  <DataSourceAllowed>None</DataSourceAllowed>
-  <CustomDataSources />
-  <AutoGrowSupported>false</AutoGrowSupported>
-  <IncludeInControlInfo>false</IncludeInControlInfo>
-  <SupportFiles />
-  <iOS_SupportFiles />
-  <Android_SupportFiles />
-  <BB_SupportFiles />
-  <RuntimeRender>SimpleScrollBarRender.js</RuntimeRender>
-  <HeightPropertyName>Height</HeightPropertyName>
-  <WidthPropertyName>Width</WidthPropertyName>
-  <ResizeSupported>false</ResizeSupported>
-  <ObjClass>SimpleScrollBar</ObjClass>
-  <Description>SimpleScrollBar</Description>
-  <Id>00000000-0000-0000-0000-000000000000</Id>
-  <Name>SimpleScrollBar</Name>
-  <Platforms />
-  <ShowMethod>show</ShowMethod>
-  <ReferencedFiles>
-    <File>perfect-scrollbar.css</File>
-    <File>perfect-scrollbar.jquery.js</File>
-  </ReferencedFiles>
-  <iOS_ReferencedFiles />
-  <Android_ReferencedFiles />
-  <BB_ReferencedFiles />
-  <Constructor>
-    <Parameters />
+    <Version>1.00</Version>
+    <DataSourceAllowed>None</DataSourceAllowed>
+    <CustomDataSources/>
+    <AutoGrowSupported>false</AutoGrowSupported>
+    <IncludeInControlInfo>false</IncludeInControlInfo>
+    <SupportFiles/>
+    <iOS_SupportFiles/>
+    <Android_SupportFiles/>
+    <BB_SupportFiles/>
+    <RuntimeRender>SimpleScrollBarRender.js</RuntimeRender>
+    <HeightPropertyName>Height</HeightPropertyName>
+    <WidthPropertyName>Width</WidthPropertyName>
+    <ResizeSupported>false</ResizeSupported>
+    <ObjClass>SimpleScrollBar</ObjClass>
+    <Description>SimpleScrollBar</Description>
+    <Id>00000000-0000-0000-0000-000000000000</Id>
     <Name>SimpleScrollBar</Name>
-  </Constructor>
-  <PropertiesDefinition>SimpleScrollBarProperties.xml</PropertiesDefinition>
-  <DesignRender>SimpleScrollBarRender.xsl</DesignRender>
-  <ToolboxIcon>simplescrollbar_icono.ico</ToolboxIcon>
-  <ControlType />
-  <Categories>
-    <Category>Carson.mobi</Category>
-  </Categories>
-  <Events />
-  <Methods />
-  <Actions />
-  <IsPublic>true</IsPublic>
-  <Android_IsScrollable>false</Android_IsScrollable>
+    <Platforms/>
+    <ShowMethod>show</ShowMethod>
+    <ReferencedFiles>
+        <File>perfect-scrollbar.css</File>
+        <File>perfect-scrollbar.jquery.js</File>
+    </ReferencedFiles>
+    <iOS_ReferencedFiles/>
+    <Android_ReferencedFiles/>
+    <BB_ReferencedFiles/>
+    <Constructor>
+        <Parameters/>
+        <Name>SimpleScrollBar</Name>
+    </Constructor>
+    <PropertiesDefinition>SimpleScrollBarProperties.xml</PropertiesDefinition>
+    <DesignRender>SimpleScrollBarRender.xsl</DesignRender>
+    <ToolboxIcon>simplescrollbar_icono.ico</ToolboxIcon>
+    <ControlType/>
+    <Categories>
+        <Category>Carson.mobi</Category>
+    </Categories>
+    <Events/>
+    <Methods/>
+    <Actions/>
+    <IsPublic>true</IsPublic>
+    <Android_IsScrollable>false</Android_IsScrollable>
 </ControlDefinition>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Object id="SimpleHamburguesa">
+        <Group>
+            <Name>General</Name>
+            <Type>Main</Type>
+            <Childs>
+                <Prop>
+                    <Id>Animacion</Id>
+                    <Name>Animacion</Name>
+                    <Type>Combo</Type>
+                    <Default>3dx</Default>
+                    <Metadata/>
+                    <Values>
+                        <Value id="hamburger--3dx" desc="3dx"/>
+                        <Value id="hamburger--3dx-r" desc="3dx-r"/>
+                        <Value id="hamburger--3dy" desc="3dy"/>
+                        <Value id="hamburger--3dy-r" desc="3dy-r"/>
+                        <Value id="hamburger--arrow" desc="arrow"/>
+                        <Value id="hamburger--arrow-r" desc="arrow-r"/>
+                        <Value id="hamburger--arrowalt" desc="arrowalt"/>
+                        <Value id="hamburger--arrowalt-r" desc="arrowalt-r"/>
+                        <Value id="hamburger--boring" desc="boring"/>
+                        <Value id="hamburger--collapse" desc="collapse"/>
+                        <Value id="hamburger--collapse-r" desc="collapse-r"/>
+                        <Value id="hamburger--elastic" desc="elastic"/>
+                        <Value id="hamburger--elastic-r" desc="elastic-r"/>
+                        <Value id="hamburger--emphatic" desc="emphatic"/>
+                        <Value id="hamburger--emphatic-r" desc="emphatic-r"/>
+                        <Value id="hamburger--slider" desc="slider"/>
+                        <Value id="hamburger--slider-r" desc="slider-r"/>
+                        <Value id="hamburger--spin" desc="spin"/>
+                        <Value id="hamburger--spin-r" desc="spin-r"/>
+                        <Value id="hamburger--spring" desc="spring"/>
+                        <Value id="hamburger--spring-r" desc="spring-r"/>
+                        <Value id="hamburger--stand" desc="stand"/>
+                        <Value id="hamburger--stand-r" desc="stand-r"/>
+                        <Value id="hamburger--squeeze" desc="squeeze"/>
+                        <Value id="hamburger--vortex" desc="vortex"/>
+                        <Value id="hamburger--vortex-r" desc="vortex-r"/>
+                    </Values>
+                </Prop>
+                <Prop>
+                    <Id>Color</Id>
+                    <Name>Color</Name>
+                    <Type>Color</Type>
+                    <Metadata/>
+                </Prop>
+                <Prop>
+                    <Id>FondoCircular</Id>
+                    <Name>FondoCircular</Name>
+                    <Type>Combo</Type>
+                    <Default>n</Default>
+                    <Metadata/>
+                    <Values>
+                        <Value id="n" desc="No"/>
+                        <Value id="s" desc="Si"/>
+                    </Values>
+                </Prop>
+            </Childs>
+        </Group>
+    </Object>
+</Content>

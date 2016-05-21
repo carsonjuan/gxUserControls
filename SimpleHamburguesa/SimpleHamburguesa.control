@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <Version>0.60</Version>
+    <Version>0.9</Version>
     <DataSourceAllowed>None</DataSourceAllowed>
     <CustomDataSources/>
     <AutoGrowSupported>false</AutoGrowSupported>
@@ -9,29 +9,29 @@
     <iOS_SupportFiles/>
     <Android_SupportFiles/>
     <BB_SupportFiles/>
-    <RuntimeRender>SimpleBotonRender.js</RuntimeRender>
+    <RuntimeRender>SimpleHamburguesaRender.js</RuntimeRender>
     <HeightPropertyName>Height</HeightPropertyName>
     <WidthPropertyName>Width</WidthPropertyName>
-    <ResizeSupported>false</ResizeSupported>
-    <ObjClass>SimpleBoton</ObjClass>
-    <Description>Simple Boton</Description>
+    <ResizeSupported>true</ResizeSupported>
+    <ObjClass>SimpleHamburguesa</ObjClass>
+    <Description>Simple Hamburguesa</Description>
     <Id>00000000-0000-0000-0000-000000000000</Id>
-    <Name>SimpleBoton</Name>
+    <Name>SimpleHamburguesa</Name>
     <Platforms/>
     <ShowMethod>show</ShowMethod>
     <ReferencedFiles>
-        <File>simpleboton.css</File>
+        <File>hamburguesa.css</File>
     </ReferencedFiles>
     <iOS_ReferencedFiles/>
     <Android_ReferencedFiles/>
     <BB_ReferencedFiles/>
     <Constructor>
         <Parameters/>
-        <Name>SimpleBoton</Name>
+        <Name>SimpleHamburguesa</Name>
     </Constructor>
-    <PropertiesDefinition>SimpleBotonProperties.xml</PropertiesDefinition>
-    <DesignRender>SimpleBotonRender.xsl</DesignRender>
-    <ToolboxIcon>simpleboton_icono.ico</ToolboxIcon>
+    <PropertiesDefinition>SimpleHamburguesaProperties.xml</PropertiesDefinition>
+    <DesignRender>SimpleHamburguesaRender.xsl</DesignRender>
+    <ToolboxIcon>simplehamburguesa_icono.ico</ToolboxIcon>
     <ControlType/>
     <Categories>
         <Category>Carson.mobi</Category>
@@ -39,17 +39,7 @@
     <Events>
         <Event>Click</Event>
     </Events>
-    <Methods>
-        <Method>
-            <ReturnType/>
-            <Parameters>
-                <Parameter>Integer</Parameter>
-            </Parameters>
-            <Signature>SetCantidadEnBurbuja(cantidad:Integer)</Signature>
-            <Name>SetCantidadEnBurbuja</Name>
-            <FullName>SetCantidadEnBurbuja</FullName>
-        </Method>
-    </Methods>
+    <Methods/>
     <Actions/>
     <IsPublic>true</IsPublic>
     <Android_IsScrollable>false</Android_IsScrollable>

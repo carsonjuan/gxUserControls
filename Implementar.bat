@@ -1,15 +1,17 @@
+echo off
+
 set rutaGx="C:\Program Files (x86)\Artech\GeneXus\GeneXusXEv3\Genexus.exe"
 
-set nombreUC=SimpleMenu
+set nombresUC=SimpleHamburguesa SimpleBoton SimpleMenu SimpleScrollBar
 set rutaGxUC="C:\Program Files (x86)\Artech\GeneXus\GeneXusXEv3\UserControls"
 set rutaUCFuente="D:\projectos\gxUserControls"
 
-xcopy /s /y %rutaUCFuente%\%nombreUC% %rutaGxUC%\%nombreUC%
+for %%a in (%nombresUC%) do (
+   echo xcopy /s /y %rutaUCFuente%\%nombreUC% %rutaGxUC%\%%a
+)
 
+echo Instalando
 %rutaGx% /install
 
-timeout 3
-
+echo Abriendo Genxus
 %rutaGx%
-
-pause
