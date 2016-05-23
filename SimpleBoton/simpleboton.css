@@ -1,51 +1,86 @@
 .SimpleBoton {
-    color: #fff;
-    display: block;
-    text-align: center;
-    z-index: 1;
-    position: relative;
-    outline: 0px;
-    font-size: 24px;
-    background-color: transparent;
-    border-color: transparent;
-    background-size: 10% 10%;
-    width: 55px;
-    height: 45px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  outline: 0px;
+  font-size: 20px;
+  background-color: transparent;
+  border-color: transparent;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border: none;
 }
+
 .SimpleBoton:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .5);
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    border-radius: 5px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  height: 50px;
+  width: 50px;
+  background: rgba(255,255,255,.22);;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
+
 .SimpleBoton:hover:before, .open > .SimpleBoton:before {
-    -webkit-transform: scale(1);
-    transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
+
 .SimpleBotonBurbuja {
     position: absolute;
     font-style: normal;
     background: #f44336;
     padding: 1px 5px;
     border-radius: 2px;
-    right: 7px;
-    top: -3px;
+    right: 10px;
+    top: 7px;
     font-size: 10px;
     line-height: 15px;
 }
+
 .SimpleBotonDropdown {
-    border-radius: 0px;
+  border-radius: 0px;
+}
+
+.dropdown-menu.pull-right.SimpleBotonDropdown:before {
+  position: absolute;
+  top: -7px;
+  right: 22px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+  left: inherit;
+}
+
+.dropdown-menu.pull-right.SimpleBotonDropdown:after {
+  position: absolute;
+  top: -6px;
+  right: 23px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+  left: inherit;
 }
